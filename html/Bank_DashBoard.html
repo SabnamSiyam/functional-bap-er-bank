@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank_DashBoard</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="container mx-auto w-9/12 bg-teal-50">
+    <header>
+      <h1 class="text-purple-400 text-5xl text-center font-bold mt-12">
+        Bap Er Bank <span class="text-red-200 text- italic">Recap</span>
+      </h1>
+    </header>
+    <!-- upper section start -->
+    <section class="mx-auto w-9/12 mt-12">
+      <div class="grid grid-cols-3 gap-4">
+        <div class="text-white bg-sky-800 font-semibold px-8 py-4 rounded-2xl">
+          <h3 class="text-2xl">Deposit</h3>
+          <h1 class="text-5xl">$<span id="total-deposit">00</span></h1>
+        </div>
+        <div
+          class="text-white bg-green-800 font-semibold px-8 py-4 rounded-2xl"
+        >
+          <h3 class="text-2xl">Withdraw</h3>
+          <h1 class="text-5xl">$<span id="total-withdraw">00</span></h1>
+        </div>
+        <div class="text-white bg-pink-800 font-semibold px-8 py-4 rounded-2xl">
+          <h3 class="text-2xl">Balance</h3>
+          <h1 class="text-5xl">$<span id="total-balance">1200</span></h1>
+        </div>
+      </div>
+    </section>
+    <!-- Upper part end -->
+
+    <!-- deposit field section start -->
+    <section class="mt-10 mx-auto w-9/12">
+      <div class="grid grid-cols-2 gap-4 font-semibold rounded-2xl">
+        <div class="bg-lime-800 px-8 py-4 rounded-2xl">
+          <h3 class="text-2xl mb-1 text-white italic">Please Deposit</h3>
+          <input
+            class="w-9/12 mx-auto rounded-2xl bg-yellow-100 p-3 mt-2"
+            type="text"
+            placeholder="$ amount you want to deposit"
+            name=""
+            id="deposit-field"
+          />
+          <button
+            id="deposit-btn"
+            class="bg-blue-800 text-2xl text-white block px-4 py-3 rounded-2xl hover:bg-cyan-950 mt-4"
+          >
+            Deposit
+          </button>
+        </div>
+        <!--  deposit field section end -->
+
+        <!-- withdraw field section start -->
+        <div class="bg-amber-800 px-8 py-4 rounded-2xl">
+          <h3 class="text-2xl mb-1 text-white italic">Please Withdraw</h3>
+          <input
+            class="w-9/12 mx-auto rounded-2xl bg-yellow-100 p-3 mt-2"
+            type="text"
+            placeholder="$ amount you want to withdraw"
+            name=""
+            id="withdraw-field"
+          />
+          <button
+            id="withdraw-btn"
+            class="bg-pink-700 text-2xl text-white block px-4 py-3 rounded-2xl hover:bg-cyan-950 mt-4"
+          >
+            Withdraw
+          </button>
+        </div>
+      </div>
+      <!-- withdraw field section end -->
+    </section>
+    <footer class="text-center mt-12 py-5">
+      <button
+        id="logout-btn"
+        class="bg-rose-600 hover:bg-cyan-700 px-5 py-3 text text-center mx-auto text-2xl text-white rounded-2xl mb-5"
+      >
+        Log out
+      </button>
+
+      <h3 class="text-3xl italic text-bold text-cyan-800 p-3">
+        Powered by Functional_Bap_Er_Bank.com
+      </h3>
+      <h4 class="text-2xl italic text-bold text-red-400">
+        Sponsored by AmmurHotel.com
+      </h4>
+    </footer>
+    <script src="/js/utilities.js"></script>
+    <script src="/js/deposit.js"></script>
+    <script src="/js/withdraw.js"></script>
+    <script src="/js/logout.js"></script>
+  </body>
+</html>
+
+<!--  Made with tailwind css framework -->
